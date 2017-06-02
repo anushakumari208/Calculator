@@ -78,34 +78,8 @@ public class ScientificCalc extends BasicCalc{
 		return(Math.sin(a));
 		
 	}
-	public static void main(String args[])
-	{
-		/*BasicCalc c= new BasicCalc();
-		c.menu();
-		c.userInputs();
-		c.performOperation();
-		*/
-		int x;
-		Scanner s=new Scanner(System.in);
-		System.out.println("enter either 1.Basic calc 2.Scientific calc");
-		x=s.nextInt();
-		if(x==1)
-		{
-			BasicCalc c= new BasicCalc();
-			c.menu();
-			c.userInputs();
-			c.performOperation();
-		}
-		if(x==2)
-		{
-			ScientificCalc scalc=new ScientificCalc();
-			scalc.menu();
-			scalc.userInputs();
-			scalc.performOperation();
-		}
-	}
+	
 }
-
 		
 			     
 		
