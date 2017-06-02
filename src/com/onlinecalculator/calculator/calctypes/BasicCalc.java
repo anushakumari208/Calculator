@@ -1,12 +1,12 @@
 package com.onlinecalculator.calculator.calctypes;
 import java.util.Scanner;
 
-class Calc2
+class BasicCalc
 {
-	int a,b,c,ch,res;
+	public int a,b,c,ch,res;
 	
 	
-	public Calc2()
+	public BasicCalc()
 
 	{
 		
@@ -36,6 +36,7 @@ class Calc2
     	Scanner s=new Scanner(System.in);
     	System.out.println("enter first number");
     	a=s.nextInt();
+    	
      	System.out.println("enter second number");
     	b=s.nextInt();
    	
@@ -48,6 +49,7 @@ class Calc2
     	switch(ch)
 		{
 		
+	
 		case 1:System.out.println("addition");
 		res=add();
 		System.out.println(res);
@@ -96,18 +98,6 @@ class Calc2
 	{
 		c=a/b;
 		return c;
-	}
-	
-}
-public class BasicCalc
-{
-	public static void main(String args[])
-	{
-		Calc2 c= new Calc2();
-		c.menu();
-		c.userInputs();
-		c.performOperation();
-		
 	}
 	
 }
